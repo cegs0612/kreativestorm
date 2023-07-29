@@ -1,0 +1,99 @@
+
+
+header {
+  background-color: #1F2937;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: 700;
+}
+
+.icon {
+  font-size: 24px;
+  color: #F9FAF8;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  list-style: none;
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-item a {
+  font-size: 18px;
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+.icon:hover ~ .menu-items {
+  display: block;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-items a {
+  display: block;
+  padding: 10px;
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+.hero {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+.hero-secondary {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: row;
+align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add some spacing between logo and icon */
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon:hover ~ .menu-items {
+    display: flex;
+  }
+}
